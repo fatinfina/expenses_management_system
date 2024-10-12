@@ -25,7 +25,7 @@ use App\Http\Controllers\expense\ExpenseController;
 // });
 
 // 
-Route::get('/home', [homeController::class, 'index'])->name('home');
+Route::get('/', [homeController::class, 'index'])->name('home');
 
 
 Route::group(['prefix'=>'/expenses', 'as'=> 'expense.'], function (){
